@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>McDonald's Granada - Home</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="styles/index_style.css" rel="stylesheet"/>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">McDonald's PH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_page.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1><b>Welcome to McDonald's Granada branch!</b></h1>
+        <p>Love ko 'to.</p>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://s7d1.scene7.com/is/image/mcdonalds/crown_point_mcdonalds-RR-EDIT_001:hero-desktop?resmode=sharp2" class="d-block w-100" alt="McDonald's">
+            </div>
+            <div class="carousel-item">
+                <img src="styles/pictures/mcdonalds_restaurant.png" class="d-block w-100" alt="McDonald's Granada Location">
+            </div>
+            <div class="carousel-item">
+                <img src="https://d3bjzufjcawald.cloudfront.net/public/web/2023-09-22/650d77c3b3194/COCOMELON-1920x611-banner.jpg" class="d-block w-100" alt="Birthday Celebration">
+            </div>
+            <div class="carousel-item">
+                <img src="https://d3bjzufjcawald.cloudfront.net/public/web/2022-08-04/62eb51d8725f2/Mcdo_E-Gifts_CAROUSEL-DESKTOP-Web-Banner-Refresh_1920x611-banner.jpg" class="d-block w-100" alt="McDonald's Meal">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why People Love McDonald's?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🍔</div>
+                    <h3>Quality Food</h3>
+                    <p>Fresh ingredients and quality you can taste in every bite</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Hot, fresh meals delivered straight to your door in minutes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Great Value</h3>
+                    <p>Affordable prices without compromising on quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" onclick="showPage('home')">Home</a></li>
+                        <li><a href="about_page.html" onclick="showPage('about')">About</a></li>
+                        <li><a href="products.html" onclick="showPage('products')">Products</a></li>
+                        <li><a href="https://maps.app.goo.gl/ADWgeCyjko92PTqW8">Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" onclick="showDemoAlert()">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">McDelivery</a></li>
+                        <li><a href="#">Drive-Thru</a></li>
+                        <li><a href="#">McCafé</a></li>
+                        <li><a href="#">Party Packages</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" onclick="showDemoAlert()">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/McDo.ph">Facebook</a></li>
+                        <li><a href="https://x.com/mcdo_ph">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/mcdo_ph/">Instagram</a></li>
+                        <li><a href="https://www.mcdonalds.com.ph/home">Actual McDonald's Website</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 McDonald's Philippines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="styles/javascripts/JS_about_and_index.js"></script>
+</body>
+</html>

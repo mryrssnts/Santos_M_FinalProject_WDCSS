@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>McDonald's Granada - Login</title>
+  <link href="styles/login_style.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="page active" id="login-page">
+    <div class="login-container">
+        <form class="login-form" onsubmit="return validateLogin()">
+            <h2><b>Welcome to McDonald's Granada Branch!</b></h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">Please log in to continue</p>
+            <div style="background: #f8f9fa; padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center;">
+                <p style="margin: 5px 0; font-weight: bold; color: #DA291C;">Username: admin</p>
+                <p style="margin: 5px 0; font-weight: bold; color: #DA291C;">Password: lovinko</p>
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="login-submit">Login</button>
+            <div style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #666;">
+                © 2025 McDonald's Corporation. <br>
+                Note: This is a demo website. For school final project only.
+            </div>
+        </form>
+    </div>
+</div>
+  <script src="styles/javascripts/JS_login.js"></script>
+</body>
+</html>
